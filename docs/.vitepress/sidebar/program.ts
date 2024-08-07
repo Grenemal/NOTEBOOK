@@ -3,7 +3,7 @@ export default function sidebarProgram() {
     {
       text: '💻 编程学习',
       items: [
-        { text: '介绍', link: '/program/' },
+        { text: '介绍', link: '/fluoreading/' },
         {
           text: '编程实战',
           items: [
