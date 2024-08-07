@@ -3,9 +3,9 @@ author: "Choi Yang"
 date: 2023-04-18
 ---
 
-# ChoDocs 的 VitePress 插件折腾记录
+# Fluolab 的 VitePress 插件折腾记录
 
-如果你也想拥有和 [chodocs.cn](https://chodocs.cn/) 一样的 vitepress 文档效果，不妨从这篇文章看起。
+如果你也想拥有和 [Fluolab.cn](https://Fluolab.cn/) 一样的 vitepress 文档效果，不妨从这篇文章看起。
 
 > 事先声明：在自己配置之前查看一下是否版本和我目前是一致的，一般而言版本号相差个位数影响不大，如果相差较大建议升级一下 vitepress 版本并结合官方文档修改。
 
@@ -24,7 +24,7 @@ date: 2023-04-18
 
 核心文件源代码在这里:
 
-[vite.config.ts 源码](https://github.com/chodocs/chodocs/blob/main/docs/vite.config.ts)
+[vite.config.ts 源码](https://github.com/Fluolab/Fluolab/blob/main/docs/vite.config.ts)
 
 ### 示例代码
 
@@ -32,7 +32,7 @@ date: 2023-04-18
 
 文件路径 `docs/vite.config.ts`，如下：
 
-> 遇到提示说需要安装的包，可参考 chodocs 的 `package.json` 文件中的 `devDependencies` 部分，按需安装即可。
+> 遇到提示说需要安装的包，可参考 Fluolab 的 `package.json` 文件中的 `devDependencies` 部分，按需安装即可。
 
 ```ts
 import { resolve } from 'node:path'
@@ -95,7 +95,7 @@ export default defineConfig(async () => {
 
 核心文件源代码在这里，可以点击查看:
 
-[markdownTransform.ts](https://github.com/chodocs/chodocs/blob/main/docs/.vitepress/plugins/markdownTransform.ts)
+[markdownTransform.ts](https://github.com/Fluolab/Fluolab/blob/main/docs/.vitepress/plugins/markdownTransform.ts)
 
 ### 示例代码
 
@@ -110,13 +110,13 @@ import { getReadingTime } from './../theme/utils'
 
 export function MarkdownTransform(): Plugin {
   return {
-    name: 'chodocs-md-transform',
+    name: 'Fluolab-md-transform',
     enforce: 'pre',
     async transform(code, id) {
       if (!id.match(/\.md\b/))
         return null
       // convert links to relative
-      code = code.replace(/https?:\/\/chodocs\.cn\//g, '/')
+      code = code.replace(/https?:\/\/Fluolab\.cn\//g, '/')
       const [_name, i] = id.split('/').slice(-2)
 
       // cut index.md
@@ -167,19 +167,19 @@ import Components from 'unplugin-vue-components/vite'
 
 这个组件是用来显示贡献者信息的，核心文件源代码在这里：
 
-[Contributors.vue](https://github.com/chodocs/chodocs/blob/main/docs/.vitepress/theme/components/Contributors.vue)
+[Contributors.vue](https://github.com/Fluolab/Fluolab/blob/main/docs/.vitepress/theme/components/Contributors.vue)
 
 ### CopyRight 组件
 
 这个组件是用来显示版权信息的，核心文件源代码在这里：
 
-[CopyRight.vue](https://github.com/chodocs/chodocs/blob/main/docs/.vitepress/theme/components/CopyRight.vue)
+[CopyRight.vue](https://github.com/Fluolab/Fluolab/blob/main/docs/.vitepress/theme/components/CopyRight.vue)
 
 ## 文档页面的顶部信息组件
 
 这个组件用来显示阅读时间和字数等，核心文件源代码在这里：
 
-[PageInfo.vue](https://github.com/chodocs/chodocs/blob/main/docs/.vitepress/theme/components/PageInfo.vue)
+[PageInfo.vue](https://github.com/Fluolab/Fluolab/blob/main/docs/.vitepress/theme/components/PageInfo.vue)
 
 ## 文章阅读数统计
 
@@ -255,7 +255,7 @@ export default theme
 
 pwa 使用的是 `vite-plugin-pwa`，具体引入方式可见这里:
 
-[plugins/pwa.ts](https://github.com/chodocs/chodocs/blob/main/docs/.vitepress/theme/plugins/pwa.ts)
+[plugins/pwa.ts](https://github.com/Fluolab/Fluolab/blob/main/docs/.vitepress/theme/plugins/pwa.ts)
 
 ```ts
 import fg from 'fast-glob'
@@ -376,11 +376,11 @@ export const pwa: Partial<VitePWAOptions> = {
 
 ## 文档支持 rss 订阅
 
-这个是前不久做好的功能，核心是使用的 `feed` 库生成的，具体效果可见 `https://chodocs.cn/feed.xml`。
+这个是前不久做好的功能，核心是使用的 `feed` 库生成的，具体效果可见 `https://Fluolab.cn/feed.xml`。
 
 核心代码可见这里:
 
-[genFeed.ts](https://github.com/chodocs/chodocs/blob/main/docs/.vitepress/plugins/genFeed.ts)
+[genFeed.ts](https://github.com/Fluolab/Fluolab/blob/main/docs/.vitepress/plugins/genFeed.ts)
 
 以下是示例代码：
 
@@ -408,9 +408,9 @@ export async function genFeed(config: SiteConfig) {
     id: baseUrl,
     link: baseUrl,
     language: 'zh-CN',
-    image: 'https://chodocs.cn/chodocs-logo.svg',
+    image: 'https://Fluolab.cn/Fluolab-logo.svg',
     favicon: `${baseUrl}/favicon.ico`,
-    copyright: 'Copyright (c) 2022-present, Chocolate and ChoDocs contributors',
+    copyright: 'Copyright (c) 2022-present, Chocolate and Fluolab contributors',
   })
 
   const posts = await createContentLoader('**/*.md', {
@@ -454,7 +454,7 @@ export async function genFeed(config: SiteConfig) {
 
 ## 谷歌分析和百度统计
 
-这个主要是观察网站数据使用，当然 ChoDocs 之后还会集成 umami，以下提供一下对应的文件路径：
+这个主要是观察网站数据使用，当然 Fluolab 之后还会集成 umami，以下提供一下对应的文件路径：
 
 - 谷歌分析：`docs/.vitepress/theme/plugins/googleAnalytics.ts`
 - 百度统计：`docs/.vitepress/theme/plugins/baidutongji.ts`

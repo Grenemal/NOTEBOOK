@@ -1,5 +1,5 @@
 {
-  "name": "chodocs",
+  "name": "Fluolab",
   "type": "module",
   "version": "0.2.3",
   "private": true,
@@ -9,10 +9,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chodocs/chodocs"
+    "url": "git+https://github.com/Fluolab/Fluolab"
   },
   "bugs": {
-    "url": "https://github.com/chodocs/chodocs/issues"
+    "url": "https://github.com/Fluolab/Fluolab/issues"
   },
   "keywords": [
     "react 专栏",

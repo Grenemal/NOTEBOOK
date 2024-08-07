@@ -9,7 +9,7 @@ date: 2022-12-18
 
 ## 背景
 
-最近在折腾 VitePress，搭建了一个文档项目：[ChoDocs](https://chodocs.cn/)，不过文档还不支持搜索功能，虽然目前内容不多，但待我同步完之后，搜索就很有必要了。
+最近在折腾 VitePress，搭建了一个文档项目：[Fluolab](https://Fluolab.cn/)，不过文档还不支持搜索功能，虽然目前内容不多，但待我同步完之后，搜索就很有必要了。
 
 之前看 VitePress 官网发现没有相关介绍文档，不过好在自己对于 algolia 比较熟悉了，于是自己在项目中集成了。
 
@@ -23,7 +23,7 @@ date: 2022-12-18
 
 <CloudinaryImg publicId='program/algolia-index_kfusvo' alt='algolia-index'/>
 
-登录之后会进入控制台页面，点击右上角头像，会有一个设置选项，之后来到 Applications 这里，去创建一个应用，以我自己的为例，下图已经创建好了「chodocs」。
+登录之后会进入控制台页面，点击右上角头像，会有一个设置选项，之后来到 Applications 这里，去创建一个应用，以我自己的为例，下图已经创建好了「Fluolab」。
 
 <CloudinaryImg publicId='program/algolia-new-app_cqdd2f' alt='algolia-new-app'/>
 
@@ -43,7 +43,7 @@ date: 2022-12-18
 
 在上一步我们获取了公开的 key，在这里我们就来配置一下，将上述的 `Search-Only API Key` 填到 apiKey 字段中，**私有的 key 不要填**！
 
-修改文件在 `docs/.vitepress/config` 文件中，具体可参考链接 [config.ts](https://github.com/chodocs/chodocs/blob/main/docs/.vitepress/config.ts)。
+修改文件在 `docs/.vitepress/config` 文件中，具体可参考链接 [config.ts](https://github.com/Fluolab/Fluolab/blob/main/docs/.vitepress/config.ts)。
 
 ```json
 {
@@ -53,7 +53,7 @@ date: 2022-12-18
   "algolia": {
     "appId": "RDDxxx", // 需要替换
     "apiKey": "9302dbxxx", // 需要替换
-    "indexName": "chodocs", // 需要替换
+    "indexName": "Fluolab", // 需要替换
     "placeholder": "请输入关键词",
     "buttonText": "搜索"
   }
@@ -64,7 +64,7 @@ date: 2022-12-18
 
 将上述获取的 `Admin API Key` 添加到 Github Secrets 中，如下图所示，创建 `API_KEY` 和 `APPLICATION_ID` 两个字段，一会在 ci 中会使用到。
 
-<CloudinaryImg publicId='program/chodocs-settings_laq3ug' alt='chodocs-settings'/>
+<CloudinaryImg publicId='program/Fluolab-settings_laq3ug' alt='Fluolab-settings'/>
 
 ### 创建 crawlerConfig.json
 
@@ -72,8 +72,8 @@ date: 2022-12-18
 
 ```json
 {
-  "index_name": "chodocs", // 填写自己的索引名称
-  "start_urls": ["https://chodocs.cn/"], // 填写自己的网站地址
+  "index_name": "Fluolab", // 填写自己的索引名称
+  "start_urls": ["https://Fluolab.cn/"], // 填写自己的网站地址
   "rateLimit": 8,
   "maxDepth": 10,
   "selectors": {

@@ -6,9 +6,9 @@ author: "Choi Yang"
 
 ## 贡献指南
 
-可在 [github](https://github.com/chodocs/chodocs) 页 fork 一份仓库代码，然后基于 fork 后的提 PR 过来。
+可在 [github](https://github.com/Fluolab/Fluolab) 页 fork 一份仓库代码，然后基于 fork 后的提 PR 过来。
 
-> 如果你足够感兴趣，我们也可以拉你加入我们的团队，直接基于 [chodocs](https://github.com/chodocs/chodocs) 开发。
+> 如果你足够感兴趣，我们也可以拉你加入我们的团队，直接基于 [Fluolab](https://github.com/Fluolab/Fluolab) 开发。
 
 推荐使用 pnpm 安装：
 
@@ -71,4 +71,4 @@ pnpm run lint:fix
 
 ## 感谢参与
 
-非常感谢你对于 [ChoDocs](https://github.com/chodocs/chodocs) 的参与贡献，我们会在首页 [chodocs.cn](https://chodocs.cn/) 展示各位贡献者的头像！
+非常感谢你对于 [Fluolab](https://github.com/Fluolab/Fluolab) 的参与贡献，我们会在首页 [Fluolab.cn](https://Fluolab.cn/) 展示各位贡献者的头像！

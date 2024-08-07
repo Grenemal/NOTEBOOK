@@ -4,13 +4,13 @@ import { getReadingTime } from './../theme/utils'
 
 export function MarkdownTransform(): Plugin {
   return {
-    name: 'chodocs-md-transform',
+    name: 'Fluolab-md-transform',
     enforce: 'pre',
     async transform(code, id) {
       if (!id.match(/\.md\b/))
         return null
       // convert links to relative
-      code = code.replace(/https?:\/\/chodocs\.cn\//g, '/')
+      code = code.replace(/https?:\/\/Fluolab\.cn\//g, '/')
       const [_name, i] = id.split('/').slice(-2)
 
       // convert img

@@ -22,8 +22,8 @@ import './style.css'
 
 export default function App() {
   const data = {
-    listItem: 'ChoDocs',
-    title: 'https://chodocs.cn/',
+    listItem: 'Fluolab',
+    title: 'https://Fluolab.cn/',
     text: 'Hello Chocolate',
   }
 
@@ -89,8 +89,8 @@ export const DataContext = createContext({})
 
 export default function App() {
   const data = {
-    listItem: 'ChoDocs',
-    title: 'https://chodocs.cn/',
+    listItem: 'Fluolab',
+    title: 'https://Fluolab.cn/',
     text: 'Hello Chocolate',
   }
 

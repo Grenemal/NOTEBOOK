@@ -10,7 +10,7 @@ onErrorCaptured((err) => {
   error.value = err
 })
 
-const GITHUB_BLOB_URL = 'https://github.com/chodocs/chodocs/blob/main/docs'
+const GITHUB_BLOB_URL = 'https://github.com/Fluolab/Fluolab/blob/main/docs'
 const URL = `${GITHUB_BLOB_URL}${demoPath.value}`
 </script>
 

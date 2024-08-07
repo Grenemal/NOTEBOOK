@@ -6,7 +6,7 @@ author: "HearLing"
 
 总结了关于 js 常见的面试题，由于涉及到的问题太多了，有个别的问题例如事件循环，如果是完全没基础的话，需要看网络专栏里的[事件循环](/interview/browser/principle/eventLoop.html)。
 
-当然也是由于是第一版，还有一些问题没有解答的很深，也有可能存在错误，如果你有发现错误，或者想要补充问题或答案的，都可以在本站的 GitHub 上[提交 pr](https://github.com/chodocs/chodocs/pulls)。
+当然也是由于是第一版，还有一些问题没有解答的很深，也有可能存在错误，如果你有发现错误，或者想要补充问题或答案的，都可以在本站的 GitHub 上[提交 pr](https://github.com/Fluolab/Fluolab/pulls)。
 
 ![](/img/js.png)
 

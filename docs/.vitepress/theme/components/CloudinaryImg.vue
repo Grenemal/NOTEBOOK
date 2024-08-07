@@ -6,7 +6,7 @@ const { publicId, alt } = defineProps<{
   alt?: string
 }>()
 
-const prefix = 'chodocs/'
+const prefix = 'Fluolab/'
 
 const url = buildUrl(prefix + publicId, {
   cloud: {

@@ -7,7 +7,7 @@ date: 2023-02-09
 
 <VideoLink bvId="BV1DY411v7Lt">【编程】最新版本的 VitePress 中添加 Algolia 搜索，无坑版本 B 站视频传送门</VideoLink>
 
-最近 vitepress 更新了好几个版本，而 chodocs 仓库依赖更新的机器人之前因为转换组织原因没启用，所以一直没有同步版本。直到最近还是有挺多粉丝来询问为什么我按照[「给 VitePress 添加 algolia 搜索」](/program/vitepress-algolia/) 这篇文章做法而不生效，如下图所示：
+最近 vitepress 更新了好几个版本，而 Fluolab 仓库依赖更新的机器人之前因为转换组织原因没启用，所以一直没有同步版本。直到最近还是有挺多粉丝来询问为什么我按照[「给 VitePress 添加 algolia 搜索」](/program/vitepress-algolia/) 这篇文章做法而不生效，如下图所示：
 
 <CloudinaryImg publicId='program/algolia-comment_e34jfq' alt='algolia-comment'/>
 
@@ -17,7 +17,7 @@ date: 2023-02-09
 
 > 推荐这样做，也不需要继续使用我们的 ci 资源了。
 
-大家可以看到，chodocs 目前已经使用了最新的版本，但 `Algolia` 依旧还是生效的。
+大家可以看到，Fluolab 目前已经使用了最新的版本，但 `Algolia` 依旧还是生效的。
 
 这已经不是用的上一篇文章的 ci 自动爬取数据了，而是基于官方的（也是上文图中最后一段所说）`DocSearch` 来爬取数据，申请地址如下：
 

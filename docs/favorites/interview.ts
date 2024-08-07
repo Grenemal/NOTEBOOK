@@ -9,8 +9,8 @@ const interview: navItem[] = [
   },
   {
     id: 2,
-    text: 'ChoDocs-面试',
-    link: 'https://chodocs.cn/interview/',
+    text: 'Fluolab-面试',
+    link: 'https://Fluolab.cn/interview/',
     desc: 'One-stop front-end content website',
   },
 ]

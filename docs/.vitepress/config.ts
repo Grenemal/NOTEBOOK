@@ -23,7 +23,7 @@ export default withPwa(defineConfig({
     root: { label: '简体中文', lang: 'zh-CN' },
   },
   themeConfig: {
-    logo: './chodocs-logo.svg',
+    logo: './Fluolab-logo.svg',
     outline: 'deep',
     docFooter: {
       prev: '上一篇',
@@ -40,37 +40,38 @@ export default withPwa(defineConfig({
     lastUpdatedText: '最后一次更新于',
     footer: {
       message: `用心去做高质量的专业前端内容网站，欢迎 <a target="_blank" style="color: var(--vp-c-brand)" href="${github}">star ⭐</a> 让更多人发现`,
-      copyright: `<a target="_blank" href="${github}/blob/main/LICENSE">MIT License</a> | 版权所有 © 2022-${new Date().getFullYear()} <a target="_blank" href="${github}">Chocolate and ChoDocs contributors</a>`,
+      copyright: `<a target="_blank" href="${github}/blob/main/LICENSE">MIT License</a> | 版权所有 © 2022-${new Date().getFullYear()} <a target="_blank" href="${github}">Fluolab contributors</a>`,
     },
     nav: [
       {
         text: '🏆 往年回顾',
         items: [
-          { text: '🔥 24 年每周学习', link: '/weekly/2024' },
-          { text: '⭐ 23 年每周学习', link: '/weekly/202303' },
+          { text: '🔥 24 年资讯', link: '/fluoweekly/2024' },
+          { text: '⭐ 23 年资讯', link: '/fluoweekly/2023' },
         ],
       },
       {
-        text: '🔥 专栏',
+        text: '🔥 荧光入门',
         items: [
-          { text: '🔥 前端算法', link: '/algorithm/guide/' },
-          { text: '🔥 设计模式', link: '/patterns/guide/' },
-          { text: '📋 面试大全', link: '/interview/' },
+          { text: '🔥 发光基础', link: '/fluobasic/fluophore/' },
+          { text: '🔥 显微镜基础', link: '/fluobasic/microscopy/' },
+          { text: '📋 成像基础', link: '/fluobasic/imagings/' },
+          { text: '💻 荧光wiki', link: '/fluowiki/' },
         ],
       },
       {
-        text: '编程',
+        text: '工具导航',
         items: [
-          { text: '⭐ 资源导航', link: '/favorites' },
-          { text: '💻 编程学习', link: '/program/' },
-          { text: '🔧 编程工具', link: '/tool/' },
+          { text: '⭐ 实用工具', link: '/fluotools/utility/' },
+          { text: '💻 化学工具', link: '/fluotools/chemistry/' },
+          { text: '🔧 AI工具', link: '/fluotools/AItools/' },
         ],
       },
       {
-        text: '洞见',
+        text: '资讯阅读',
         items: [
-          { text: '✏️ 随笔', link: '/essay/' },
-          { text: '🌱 青葱岁月', link: '/green/ch' },
+          { text: '✏️ 快讯', link: '/fluoreading/rapid/' },
+          { text: '🌱 深度阅读', link: '/fluoreading/deep/' },
         ],
       },
       {
@@ -100,7 +101,7 @@ export default withPwa(defineConfig({
 
     ['link', { rel: 'shortcut icon', href: '/favicon.ico' }],
     ['link', { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
-    ['link', { rel: 'mask-icon', href: '/chodocs-logo.svg', color: '#06f' }],
+    ['link', { rel: 'mask-icon', href: '/Fluolab-logo.svg', color: '#06f' }],
     ['meta', { name: 'theme-color', content: '#06f' }],
 
     ['link', { rel: 'apple-touch-icon', sizes: '120x120', href: '/images/icons/apple-touch-icon.png' }],
@@ -118,7 +119,7 @@ export default withPwa(defineConfig({
     ['script', { 'async': '', 'defer': '', 'data-website-id': `${process.env.UMAMI_WEBSITE_ID || ''}`, 'src': `${process.env.UMAMI_ENDPOINT || ''}` }],
   ],
   async buildEnd(siteConfig) {
-    await sitemap({ hostname: 'https://chodocs.cn/' })
+    await sitemap({ hostname: 'https://Fluolab.cn/' })
     await genFeed(siteConfig)
   },
 }))

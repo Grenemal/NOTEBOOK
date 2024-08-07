@@ -27,7 +27,7 @@ date: 2023-04-06
  * @see https://github.com/iamvishnusankar/next-sitemap#readme
  */
 module.exports = {
-  siteUrl: 'https://chodocs.cn',
+  siteUrl: 'https://Fluolab.cn',
   generateRobotsTxt: true,
   robotsTxtOptions: {
     policies: [{ userAgent: '*', allow: '/' }],
@@ -37,13 +37,13 @@ module.exports = {
 
 这时候通过 `build` 之后你会发现生成的 `sitemap` 文件是这样的：
 
-![默认情况生成的 sitemap 文件](https://chodocs-1301295644.cos.accelerate.myqcloud.com/img/20230405214926.png)
+![默认情况生成的 sitemap 文件](https://Fluolab-1301295644.cos.accelerate.myqcloud.com/img/20230405214926.png)
 
 一般情况我们可能不需要那个 `sitemap-0.xml` 文件，然而生成的文件都放在了 `sitemap-0` 里面去了，而不是默认的 `sitemap.xml`。
 
 > 这里就以我之前用 Next.js 开发的一个博客项目为例看看吧。
 
-![](https://chodocs-1301295644.cos.accelerate.myqcloud.com/img/202304061412792.png)
+![](https://Fluolab-1301295644.cos.accelerate.myqcloud.com/img/202304061412792.png)
 
 在国内一些站点收录这块最好还是直接提供 `sitemap.xml` 文件，因此本篇就来介绍一下如何优雅地给 Next.js 项目添加 `sitemap`，并且还能拓展同域名下但是不同项目里的 `sitemap`。
 
@@ -67,7 +67,7 @@ module.exports = {
 
 这里我们只需要在配置文件里面添加 `generateIndexSitemap: false` 就可以了，这样就不会生成 `sitemap-0.xml` 文件了。
 
-![](https://chodocs-1301295644.cos.accelerate.myqcloud.com/img/202304061420122.png)
+![](https://Fluolab-1301295644.cos.accelerate.myqcloud.com/img/202304061420122.png)
 
 具体可查看原文档 [Index sitemaps (Optional)](https://github.com/iamvishnusankar/next-sitemap#index-sitemaps-optional)
 
@@ -184,7 +184,7 @@ module.exports = {
 
 此时当我们再次 `build` 时，就会生成全部内容了，如下图所示，文档内容还是挺多的，手动添加人都想哭了。
 
-![](https://chodocs-1301295644.cos.accelerate.myqcloud.com/img/202304061506602.png)
+![](https://Fluolab-1301295644.cos.accelerate.myqcloud.com/img/202304061506602.png)
 
 ## 结语
 

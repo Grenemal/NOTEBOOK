@@ -21,10 +21,10 @@ export async function genFeed(config: SiteConfig) {
     id: baseUrl,
     link: baseUrl,
     language: 'zh-CN',
-    image: 'https://chodocs.cn/chodocs-logo.svg',
+    image: 'https://Fluolab.cn/Fluolab-logo.svg',
     favicon: `${baseUrl}/favicon.ico`,
     copyright:
-      'Copyright (c) 2022-present, Chocolate and ChoDocs contributors',
+      'Copyright (c) 2022-present, Chocolate and Fluolab contributors',
   })
 
   const posts = await createContentLoader('**/*.md', {

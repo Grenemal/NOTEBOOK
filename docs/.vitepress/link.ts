@@ -1,7 +1,7 @@
 const socialLinks = [
   {
     icon: 'github',
-    link: 'https://github.com/chodocs/chodocs',
+    link: 'https://github.com/Fluolab/Fluolab',
   },
   {
     icon: {

@@ -5,22 +5,22 @@ contributors: ["Choi Yang", "HearLing"]
 # 欢迎来到小狮子前端
 
 ::: tip
-由于文档内容还在不断更新以及建设中，因此会存在文章路径更改的情况，所以如果常逛的小伙伴，建议收藏一下我的网站：[chodocs.cn](https://chodocs.cn/)，不迷路。
+由于文档内容还在不断更新以及建设中，因此会存在文章路径更改的情况，所以如果常逛的小伙伴，建议收藏一下我的网站：[Fluolab.cn](https://Fluolab.cn/)，不迷路。
 :::
 
 左上角有搜索功能，你有前端方面的问题，不妨可以搜索试一试。
 
-ChoDocs 的内容是免费开源的，但也希望各位遵循开源精神，不进行商业行为。
+Fluolab 的内容是免费开源的，但也希望各位遵循开源精神，不进行商业行为。
 
 如果你觉得内容不错的话，不妨给我们 **star** 支持一下，让更多的人看到这个优质内容网站。
 
 > Give a ⭐️ if this project helped you!
 
-[https://github.com/chodocs/chodocs](https://github.com/chodocs/chodocs)
+[https://github.com/Fluolab/Fluolab](https://github.com/Fluolab/Fluolab)
 
 ::: info 附：
 
-- [关于 ChoDocs](/chodocs)
+- [关于 Fluolab](/Fluolab)
 
 :::
 
@@ -33,7 +33,7 @@ ChoDocs 的内容是免费开源的，但也希望各位遵循开源精神，不
 - 🔧 编程工具: 归纳一些编程相关工具与网站，提高效率。
 - 🌱 青葱岁月: 程序人生时光机，记录所有美好的时光。
 - 🎉 技术视野: 跟随前沿技术，深度和广度学习。
-- 🚩 拥抱开源: 文档开源，版权 ChoDocs 所有，禁商业行为。
+- 🚩 拥抱开源: 文档开源，版权 Fluolab 所有，禁商业行为。
 
 > 学如逆水行舟，不进则退。
 
